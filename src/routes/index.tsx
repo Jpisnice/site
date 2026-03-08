@@ -248,19 +248,16 @@ function Landing() {
       >
         <div className="relative mx-auto flex max-w-[1080px] flex-col items-start gap-6 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex flex-col gap-1">
-            <h2 id="cta-heading" className="display-title text-2xl font-semibold text-primary-foreground sm:text-3xl">
+            <h2 id="cta-heading" className="cta-strip-heading display-title text-2xl font-semibold sm:text-3xl">
               Try the demo
             </h2>
-            <p className="text-sm text-primary-foreground/85">
+            <p className="cta-strip-muted text-sm">
               Sample Konkani AI call assistant — no sign-up required.
             </p>
           </div>
           <Link
             to="/demo"
-            className={cn(
-              buttonVariants({ size: 'lg' }),
-              'inline-flex border border-white/25 bg-white/95 text-primary shadow-lg hover:bg-white hover:text-primary dark:border-white/20 dark:bg-[var(--md-sys-color-on-primary-container)] dark:text-[var(--md-sys-color-primary-container)] dark:hover:bg-[var(--md-sys-color-on-primary-container)]'
-            )}
+            className={cn(buttonVariants({ size: 'lg' }), 'cta-strip-btn inline-flex shadow-md')}
           >
             Open demo
           </Link>
