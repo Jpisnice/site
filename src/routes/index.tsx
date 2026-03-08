@@ -118,8 +118,8 @@ function Landing() {
             <Link
               to="/demo"
               className={cn(
-                buttonVariants({ size: 'lg' }),
-                'inline-flex transition-transform duration-200 hover:scale-[1.02] focus-visible:scale-[1.02]'
+                buttonVariants({ variant: 'outline', size: 'lg' }),
+                'inline-flex'
               )}
             >
               Try demo
